@@ -1,0 +1,514 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+}
+
+
+/* Encabezado y barra de navegacion*/
+
+.contenedor {
+    padding: 1rem 3rem;
+    display: block;
+    text-align: center;
+    flex-wrap: wrap;    
+}
+
+
+.header {
+    background-color: #34393F;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    display: flex;
+    padding-left: 6rem;
+    width: 100%;
+}
+
+.logo-codoacodo {
+    width: 8.75%; 
+    height: 5rem;
+}
+
+.collapse.navbar-collapse {
+    margin-right: 11rem;
+}
+
+.navbar-brand {
+    margin-left: 3rem;
+}
+
+
+/*Datos conferencia*/ 
+
+
+#conferencia-fondo {
+	text-align: center;
+	background-position: center center;
+	background-size: auto; 
+	background-repeat: no-repeat;
+	position: absolute;
+    filter: brightness(0.5);
+    top: 0rem;
+    left: 0rem;
+    right: 0rem;
+    bottom: 0rem;
+    z-index: -1;
+}
+
+.conf_bs_as h1 {
+    color: #ffff;
+    text-align: right;
+    padding-top: 25rem;
+    padding-right: 11rem;
+}
+
+.texto-conferencia {
+    color: #ffff;
+    text-align: right;
+    padding-right: 11rem;
+    margin-top: 0.625rem;
+    font-weight: 260;
+    padding-left: 59.375rem;
+
+}
+
+.botonera {
+    text-align: right;
+    padding-top: 1rem;
+    padding-right: 11rem;
+    padding-left: 59rem;
+    margin-bottom: 15rem;
+}
+
+
+.btn-success {
+    font-size: 1.438rem;
+    background-color: #2FA345 !important;
+    border-color: #2FA345 !important;
+}
+
+
+/* Oradores*/
+
+.conoce_a_los_oradores {
+    text-align: center;
+    padding-top: 6rem;
+}
+
+.conoce_a_los_oradores h6 {
+    font-weight: lighter;
+}
+
+.oradores-invitados {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    justify-content: start;
+}
+
+.steve {
+    margin-bottom: 1.875rem;
+    margin-left: 18.75rem;
+    margin-right: 3.125rem;
+    width: 25rem; 
+    border: 0.063rem solid rgba(0,0,0,.125);
+}
+
+.bill {
+    margin-right: 3.125rem;
+    width: 25rem; 
+    border: 0.063rem solid rgba(0,0,0,.125);
+}
+
+.ada {
+    width: 25rem; 
+    border: 0.063rem solid rgba(0,0,0,.125);
+}
+
+
+.btn.btn-warning {
+    font-weight: 750;
+    font-size: 0.75rem;
+    padding-top: 0.063rem;
+    padding: 0.125rem;
+    padding-bottom: 0.063rem;
+}
+
+
+.btn.btn-info {
+    color: white !important;
+    background-color: #369EAE !important;
+    font-weight: 750;
+    padding: 0.188rem; 
+    font-size: 0.75rem; 
+    padding-top: 0.063rem; 
+    padding-bottom: 0.063rem;
+}
+
+.btn.btn-secondary {
+    font-weight: 750; 
+    padding: 0.125rem; 
+    font-size: 0.75rem; 
+    padding-top: 0.063rem; 
+    padding-bottom: 0.063rem;
+}
+
+.btn.btn-danger {
+    color: white; 
+    font-weight: 750;
+    padding: 0.188rem; 
+    font-size: 0.75rem; 
+    padding-top: 0.063rem; 
+    padding-bottom: 0.063rem;
+}
+
+/*Lugar y fecha de conferencia*/
+
+.container {
+    padding-left: 0%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.col-6.themed-grid-col {
+    width: 72%;
+}
+
+.col-6.themed-grid-col.text {
+    width: 72%; 
+    background-color: rgba(53,58,64,255); 
+    color: white; 
+    border-left: 0.031rem solid gray;
+}
+
+.bsasoctubre {
+    margin-left: 1rem;
+    padding-top: 1rem;
+}
+
+.bsastexto {
+    padding-left: 1rem;
+    font-weight: 6.25rem;
+    font-size: 1.2rem;
+    padding-right: 1rem;
+}
+
+
+.honolulu {
+    margin-left: 1rem;
+    margin-top: 0.313rem;
+    margin-bottom: 0.625rem;
+}
+
+
+/*Conviertete en orador*/
+
+.titulo {
+    margin-top: 1.875rem;
+    text-align: center; 
+    font-weight: lighter; 
+}
+
+h1 {
+    text-align: center;
+}
+
+.titulo-conviertete-orador h5 {
+    text-align: center; 
+    font-weight:400;
+    margin-bottom: 1.25rem;
+}
+
+
+.nombre {
+    margin-left: 31.25rem
+}
+
+.apellido {
+    margin-right: 31.25rem;
+    padding-right: 0%;
+}
+
+.form-floating {
+    margin-left: 31.25rem; 
+    margin-right: 31.25rem;
+    margin-top: 1rem;
+    font-size: 1.375rem;
+    color: grey;
+}
+
+.form-control {
+    font-size: 1.25rem;
+}
+
+.titulo2 {
+    margin-left: 31.25rem; 
+    margin-top: 3.125rem; 
+    color: rgba(154,151,158,255);
+    margin-bottom: 1rem;
+    font-weight: light;
+}
+
+.enviar {
+    margin-left: 31.25rem; 
+    margin-right: 31.25rem; 
+    width: 48%; 
+    background-color: #97C93D !important; 
+    border-color: #97C93D !important; 
+    margin-bottom: 1.875rem;
+}
+
+
+
+/*Pie de pagina */
+
+.footer {
+    text-align: center;
+    background: linear-gradient(70deg, rgba(26,54,68,255), rgba(27,82,113,255));
+    display: flex;
+    color:white;
+    flex-direction: row;
+    padding-left: 18.75rem;
+    padding-right: 18.75rem;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: 0%;
+
+}
+
+.preguntas {
+    width: 7%;
+    line-height: 150%;
+    margin-top: 0.313rem;
+}
+
+.contacto {
+    width: 7%;
+}
+
+.prensa {
+    width: 7%;
+}
+
+.conferencias {
+    width: 7%;
+}
+
+.condiciones {
+    width: 8%; 
+    line-height: 150%
+}
+
+.privacidad {
+    width: 7%;
+}
+
+.estudiantes {
+    width: 7%;
+}
+
+
+
+@media all and (max-width: 1919px) {
+
+
+
+/* Conferencia Buenos Aires */
+
+    .navbar-brand {
+        margin-left: 0%;
+        padding-left: 0%;
+        justify-content: right;
+    }
+
+    .conf_bs_as h1 {
+        padding-top: 7rem;
+        padding-right: 1rem;
+    }
+
+    .conf_bs_as {
+        padding-top: 7rem;
+        padding-right: 1rem;
+    }
+
+    .texto-conferencia {
+        padding-left: 0%;
+        padding-right: 1rem;
+    }
+
+    #conferencia-fondo {
+        height: 75vh;
+        width: 100%;
+        padding: 0rem;
+        object-fit: cover;
+        object-position: bottom;
+    }
+
+    .botonera {
+        justify-content: center;
+        padding: 0%;
+        padding-right: 1rem;
+        padding-top: 1rem;
+    }
+
+    .btn-success {
+        justify-content: center;
+        padding: 0%;
+    }
+
+/* Oradores */
+
+    .conoce_a_los_oradores {
+        justify-content: center;
+        padding-top: 7rem;
+        min-width: fit-content;
+    }
+
+    .oradores-invitados {
+        display: flex;
+        flex-direction: row;
+        grid-template-columns: 1fr 5fr;
+        grid-gap: 0.625;
+        overflow: hidden;
+        overflow: scroll;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        margin-left: 3rem;
+        margin-right: 2rem;
+      }
+
+      .steve {
+        margin-left: 1rem;
+        padding-bottom: 0%;
+      }
+
+      .ada {
+        margin-right: 1rem;
+        padding-bottom: 0%;
+      }
+
+
+/* Lugar y fecha */
+
+    .container {
+        display: block;
+        min-width: fit-content;
+    }
+
+    .col-6.themed-grid-col {
+        width: 100%;
+    }
+
+    .col-6.themed-grid-col.text {
+        width: 100%;
+        border-left: none;
+        border-top: 0.063rem;       
+    }
+
+    
+/*Quieres ser Orador */
+
+    .titulo {
+        margin: auto;
+        padding: 2%; 
+    }
+
+    .titulo2 {
+        margin: auto;
+        padding: 2%;
+    }
+
+    .nombre {
+        margin: auto;
+        padding: 2%;
+    }
+
+    .apellido {
+        margin: auto;
+        padding: 2%;
+    }
+
+    .form-floating {
+        margin: auto;
+        padding: 2%;
+    }
+
+    .enviar {
+        margin: auto;
+        width: 95%;
+        padding: auto;
+    }
+
+    .col.apellido {
+        padding: 0%;
+    }
+
+/*Pie de pagina */
+
+    .footer {
+        font-size: 1.125rem;
+        display: inline-block;
+        text-align: center;
+        padding-left: 0%;
+        padding-right: 0%;
+        margin-top: 1rem;
+    }
+
+    .preguntas {
+        width: 100%;
+    }
+    
+    .contacto {
+        width: 100%;
+    }
+    
+    .prensa {
+        width: 100%;
+    }
+    
+    .conferencias {
+        width: 100%;
+    }
+    
+    .condiciones {
+        width: 100%;
+    }
+    
+    .privacidad {
+        width: 100%;
+    }
+    
+    .estudiantes {
+        width: 100%;
+    }
+
+
+}
+
+
+
+
+
