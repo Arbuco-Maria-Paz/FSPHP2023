@@ -360,7 +360,7 @@ h1 {
     }
 
     #conferencia-fondo {
-        height: 75vh;
+        height: 48rem;
         width: 100%;
         padding: 0rem;
         object-fit: cover;
@@ -383,7 +383,7 @@ h1 {
 
     .conoce_a_los_oradores {
         justify-content: center;
-        padding-top: 7rem;
+        padding-top: 1rem;
         min-width: fit-content;
     }
 
