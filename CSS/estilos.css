@@ -281,14 +281,20 @@ h1 {
     font-weight: lighter; 
 }
 
+.card-group {
+    flex-wrap: wrap;
+}
+
+
 .promociones {
         display: flex;
         flex-direction: row;
         justify-content: space-around !important;
         margin-top: 5rem;
         padding-top: 5rem;
-        padding-bottom: 1rem;  
+        padding-bottom: 1rem;         
 }
+
 
 .card-body {
     text-align: center;
