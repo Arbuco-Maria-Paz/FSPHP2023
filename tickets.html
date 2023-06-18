@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="CSS/estilos.css">
+
+    <title>Compra tu ticket</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="header contenedor">
+            <!--Barra de navegacion-->
+            <section>
+                <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#">
+                        <img src="./imagenes_integrador_front/codoacodo.png" alt="" width="150px">Conf BsAs
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="conferencia"><a class="nav-link" aria-current="page"
+                                    href="index.html">La conferencia</a></li>
+                            <li class="oradores"><a class="nav-link" href="#seccion-oradores">Los oradores</a></li>
+                            <li class="lugaryfecha"><a class="nav-link" href="#seccion-octubre">El lugar y la fecha</a></li>
+                            <li class="orador"><a class="nav-link" href="#convierteteenorador"
+                                    tabindex="-1">Conviértete en orador</a></li>
+                            <li class="comprartickets"><a class="nav-link active" style="color: #2FA345"
+                                    href="#seccion-conferencia">Comprar tickets</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>
+        </div>
+    </header>
+
+    <!--Promociones-->
+    <section>
+        <main>
+            <div class="card-group col-6 gap-2 mx-auto promociones">
+                <div class="card border-info">
+                    <div class="card-body">
+                        <h4 class="card-title">Estudiante</h4>
+                        <p class="card-text">Tienen un descuento</p>
+                        <h5 class="card-title">80%</h5>
+                        <p>*presentar documentación</p>
+                    </div>
+                </div>
+                <div class="card border-success">
+                    <div class="card-body">
+                        <h4 class="card-title">Trainee</h4>
+                        <p class="card-text">Tienen un descuento</p>
+                        <h5 class="card-title">50%</h5>
+                        <p>*presentar documentación</p>
+                    </div>
+                </div>
+                <div class="card border-warning">
+                    <div class="card-body">
+                        <h4 class="card-title">Junior</h4>
+                        <p class="card-text">Tienen un descuento</p>
+                        <h5 class="card-title">15%</h5>
+                        <p>*presentar documentación</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+    <!--Venta de TICKET-->
+    <section>
+        <div class="titulo-conviertete-orador">
+            <h6 class="venta">VENTA</h6>
+            <h1><a>VALOR DE TICKET $200</a></h1>
+        </div>
+    
+        <div class="row">
+            <div class="col nombre">
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" id="nombre_form">
+            </div>
+    
+            <div class="col apellido">
+                <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" id="apellido_form">
+            </div>
+        </div>
+    
+        <div class="form-floating mb-3">
+            <input type="email" placeholder="email@mail.com" class="form-control" id="correo_form">
+            <label for="floatingInput">Correo</label>
+        </div>
+    
+        <div class="row">
+            <div id="cantidad_form" class="col nombre">
+                <label for="floatingSelectGrid">Cantidad</label>
+                <input type="text" class="form-control" placeholder="Cantidad">
+            </div>
+    
+            <div class="col apellido">
+                <label for="floatingSelectGrid">Categoria</label>
+                <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                    <option value="1">General</option>
+                    <option value="2">Estudiante</option>
+                    <option value="3">Trainee</option>
+                    <option value="4">Junior</option>
+                </select>
+            </div>
+        </div>
+    
+        <div id="total_form" class="form-floating">
+            <div class="alert alert-primary" role="alert">Total a pagar: $<span></span></div>
+        </div>
+    
+        <div class="row">
+            <div class="btn-group btn-group-horizontal gap-2 col-6 mx-auto">
+                <button id="boton-borrar" class="btn btn-primary btn-lg botones" type="button">Borrar</button>
+                <button id="boton-total" class="btn btn-primary btn-lg botones" type="button">Total</button>
+            </div>
+        </div>
+        </main>
+    </section>
+
+    <!--Pie de pagina-->
+    <section>
+        <footer>
+            <ul class="footer">
+                <li class="preguntas"><a>Preguntas frecuentes</a></li>
+                <li class="contacto"><a>Contáctanos</a></li>
+                <li class="prensa"><a>Prensa</a></li>
+                <li class="conferencias"><a>Conferencias</a></li>
+                <li class="condiciones"><a>Términos y condiciones</a></li>
+                <li class="privacidad"><a>Privacidad</a></li>
+                <li class="estudiantes"><a>Estudiantes</a></li>
+            </ul>
+        </footer>
+    </section>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <script src="JS/bootstrap.min.js"></script>
+    <!--Mis Scripts-->
+    <script src="JS/scripts.js"></script>
+</body>
+
+</html>

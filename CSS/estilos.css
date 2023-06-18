@@ -236,7 +236,6 @@ h1 {
     margin-bottom: 1.25rem;
 }
 
-
 .nombre {
     margin-left: 31.25rem
 }
@@ -275,7 +274,32 @@ h1 {
     margin-bottom: 1.875rem;
 }
 
+/* Tickets */ 
 
+.venta {
+    text-align: center; 
+    font-weight: lighter; 
+}
+
+.promociones {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around !important;
+        margin-top: 5rem;
+        padding-top: 5rem;
+        padding-bottom: 1rem;  
+}
+
+.card-body {
+    text-align: center;
+}
+
+.botones {
+    background-color: #97C93D !important; 
+    border-color: #97C93D !important; 
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+}
 
 /*Pie de pagina */
 
