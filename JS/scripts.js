@@ -13,7 +13,7 @@ const totalValue = document.querySelector("#total_form .alert span");
 const totalButton = document.querySelector(".botones:nth-child(2)");
 const borrarButton = document.querySelector(".botones:nth-child(1)");
 
-// Obtener referencias a los botones
+// Obtener referencias a la botonera
 const botonTotal = document.querySelector(".botones:nth-child(2)");
 const botonBorrar = document.querySelector(".botones:nth-child(1)");
 
@@ -43,12 +43,12 @@ function calcularTotal() {
       break;
   }
 
-  // Mostrar el resultado en el contenedor
+  // Mostrar el resultado en el contenedor del Total
   totalValue.textContent = resultado;
   totalContainer.style.display = "block";
 }
 
-// Función para validar el formulario antes de enviarlo
+// Función para validar el formulario antes de calcular el Total
 function validarFormulario() {
     const nombre = nombre_form.value.trim();
     const apellido = apellido_form.value.trim();
@@ -75,7 +75,7 @@ function validarFormulario() {
   }
   
 
-// Función para borrar los valores
+// Función para borrar los valores del formulario
 function borrarValores() {
     nombre_form.value = "";
     apellido_form.value = "";
@@ -86,10 +86,8 @@ function borrarValores() {
     
   }
 
-// Agregar evento al botón "Total"
-botonTotal.addEventListener("click", validarFormulario);
 
-// Agregar evento al botón "Borrar"
+botonTotal.addEventListener("click", validarFormulario);
 
 botonBorrar.addEventListener("click", borrarValores);
 
