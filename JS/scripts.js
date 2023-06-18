@@ -54,7 +54,7 @@ function validarFormulario() {
     const apellido = apellido_form.value.trim();
     const correo = correo_form.value.trim();
   
-    const regex = /^[a-zA-Z]+$/;
+    const regex = /^[a-zA-Z\s]+$/;
   
     if (!regex.test(nombre)) {
       alert("Por favor, ingresar solo letras en el campo de nombre.");
