@@ -130,10 +130,18 @@ footer {
     border: 0.063rem solid rgba(0,0,0,.125);
 }
 
+.steve p{
+    padding: 1rem;
+}
+
 .bill {
     margin-right: 3.125rem;
     width: 25rem; 
     border: 0.063rem solid rgba(0,0,0,.125);
+}
+
+.bill p{
+    padding: 1rem;
 }
 
 .ada {
@@ -141,6 +149,9 @@ footer {
     border: 0.063rem solid rgba(0,0,0,.125);
 }
 
+.ada p{
+    padding: 1rem;
+}
 
 .btn.btn-warning {
     font-weight: 750;
@@ -417,26 +428,21 @@ h1 {
     }
 
     .oradores-invitados {
-        display: flex;
-        flex-direction: row;
-        grid-template-columns: 1fr 5fr;
-        grid-gap: 0.625;
-        overflow: hidden;
-        overflow: scroll;
-        overflow-y: hidden;
-        overflow-x: scroll;
-        margin-left: 3rem;
-        margin-right: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
       }
 
       .steve {
         margin-left: 1rem;
-        padding-bottom: 0%;
+      }
+
+      .bill {
+        margin-bottom: 2rem;
+        margin-left: 1rem;
       }
 
       .ada {
         margin-right: 1rem;
-        padding-bottom: 0%;
       }
 
 
