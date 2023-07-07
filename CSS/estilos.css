@@ -317,6 +317,12 @@ h1 {
     margin-bottom: 1.875rem;
 }
 
+/* Tabla Tickets */
+
+.table {
+    margin-top: 20%;
+}
+
 /*Pie de pagina */
 
 .footer {
@@ -336,6 +342,7 @@ h1 {
     position: relative;
     width: 100%;
     margin-bottom: 0%;
+    margin-top: 1%;
 
 }
 
@@ -366,11 +373,11 @@ h1 {
     width: 7%;
 }
 
-.estudiantes {
+.estudiantes a {
     width: 7%;
+    text-decoration: none !important;
+    color: white !important;
 }
-
-
 
 @media all and (max-width: 1919px) {
 

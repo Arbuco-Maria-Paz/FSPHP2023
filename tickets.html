@@ -38,8 +38,8 @@
                             <li class="lugaryfecha"><a class="nav-link" href="#seccion-octubre">El lugar y la fecha</a></li>
                             <li class="orador"><a class="nav-link" href="#convierteteenorador"
                                     tabindex="-1">Conviértete en orador</a></li>
-                            <li class="comprartickets"><a class="nav-link active" style="color: #2FA345"
-                                    href="#seccion-conferencia">Comprar tickets</a></li>
+                            <li class="comprartickets"><a class="nav-link active" aria-current="page" style="color: #2FA345">
+                                Comprar tickets</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -85,48 +85,55 @@
             <h1><a>VALOR DE TICKET $200</a></h1>
         </div>
     
-        <div class="row">
-            <div class="col nombre">
-                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" id="nombre_form">
+        <form id="ticketForm" method="post" action="datosCompra.php">
+            <div class="row">
+                <div class="col nombre">
+                    <input type="text" class="form-control"  placeholder="Nombre" aria-label="First name" name="nombre" id="nombre_form">
+                </div>
+        
+                <div class="col apellido">
+                    <input type="text" class="form-control"  placeholder="Apellido" aria-label="Last name" name="apellido" id="apellido_form">
+                </div>
             </div>
-    
-            <div class="col apellido">
-                <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" id="apellido_form">
+        
+            <div class="form-floating mb-3">
+                <input type="email" placeholder="email@mail.com" class="form-control" name="correo" id="correo_form">
+                <label for="floatingInput">Correo</label>
             </div>
-        </div>
-    
-        <div class="form-floating mb-3">
-            <input type="email" placeholder="email@mail.com" class="form-control" id="correo_form">
-            <label for="floatingInput">Correo</label>
-        </div>
-    
-        <div class="row">
-            <div id="cantidad_form" class="col nombre">
-                <label for="floatingSelectGrid">Cantidad</label>
-                <input type="text" class="form-control" placeholder="Cantidad">
+        
+            <div class="row">
+                <div id="cantidad_form" class="col nombre">
+                    <label for="floatingSelectGrid">Cantidad</label>
+                    <input type="text" class="form-control" name="cantidad" placeholder="Cantidad">
+                </div>
+        
+                <div class="col apellido">
+                    <label for="floatingSelectGrid">Categoria</label>
+                    <select class="form-select" name="categoria" id="floatingSelectGrid" aria-label="Floating label select example">
+                        <option value="1">General</option>
+                        <option value="2">Estudiante</option>
+                        <option value="3">Trainee</option>
+                        <option value="4">Junior</option>
+                    </select>
+                </div>
             </div>
-    
-            <div class="col apellido">
-                <label for="floatingSelectGrid">Categoria</label>
-                <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
-                    <option value="1">General</option>
-                    <option value="2">Estudiante</option>
-                    <option value="3">Trainee</option>
-                    <option value="4">Junior</option>
-                </select>
+        
+        
+            <div id="total_form" class="form-floating">
+                <div class="alert alert-primary" role="alert">Total a pagar: $<span></span></div>
             </div>
-        </div>
-    
-        <div id="total_form" class="form-floating">
-            <div class="alert alert-primary" role="alert">Total a pagar: $<span></span></div>
-        </div>
-    
-        <div class="row">
-            <div class="btn-group btn-group-horizontal gap-2 col-6 mx-auto">
-                <button id="boton-borrar" class="btn btn-primary btn-lg botones" type="button">Borrar</button>
-                <button id="boton-total" class="btn btn-primary btn-lg botones" type="button">Total</button>
+        
+            <div class="row">
+                <div class="btn-group btn-group-horizontal gap-2 col-6 mx-auto">
+                    <button id="boton-borrar" class="btn btn-primary btn-lg botones" type="button">Borrar</button>
+                    <button id="boton-total" class="btn btn-primary btn-lg botones" type="button">Total</button>
+                </div>
             </div>
-        </div>
+        
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button type="submit" class="btn btn-success">Comprar</button>
+            </div>
+        </form>
         </main>
     </section>
 
@@ -140,7 +147,7 @@
                 <li class="conferencias"><a>Conferencias</a></li>
                 <li class="condiciones"><a>Términos y condiciones</a></li>
                 <li class="privacidad"><a>Privacidad</a></li>
-                <li class="estudiantes"><a>Estudiantes</a></li>
+                <li class="estudiantes"><a href="./tiquetera.php">Tickets</a></li>
             </ul>
         </footer>
     </section>
